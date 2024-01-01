@@ -1,0 +1,14 @@
+.listitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading {
+  font-size: 10px;
+  color: #475569;
+}
+
+.button {
+  width: 10px;
+  height: auto;
+}

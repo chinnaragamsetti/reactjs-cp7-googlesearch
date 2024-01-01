@@ -1,0 +1,34 @@
+/* Write your CSS here */
+.maincontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: aqua;
+}
+.googleicon {
+  width: 300px;
+}
+
+.subcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.inputcontainer {
+  display: flex;
+}
+
+.searchicon {
+  width: 20px;
+  height: auto;
+}
+
+.listcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
