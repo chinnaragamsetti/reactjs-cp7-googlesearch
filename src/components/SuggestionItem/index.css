@@ -4,11 +4,11 @@
   align-items: center;
 }
 .heading {
-  font-size: 10px;
+  font-size: 20px;
   color: #475569;
 }
 
-.button {
-  width: 10px;
+.arrow {
+  width: 20px;
   height: auto;
 }
