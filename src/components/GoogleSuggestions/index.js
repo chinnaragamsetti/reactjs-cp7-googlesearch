@@ -18,7 +18,7 @@ class GoogleSuggestions extends Component {
     const {suggestionsList} = this.props
     const {searchInput} = this.state
     const aftersearchedlist = suggestionsList.filter(eachlist =>
-      eachlist.name.toLowercase().includes(searchInput),
+      eachlist.suggestion.toLowerCase().includes(searchInput),
     )
     return (
       <div className="maincontainer">
@@ -28,13 +28,19 @@ class GoogleSuggestions extends Component {
           alt="google logo"
         />
         <div className="subcontainer">
-          <div className="inputbarcontainer">
+          <div className="searchinputbarcontainer">
             <img
               src="https://assets.ccbp.in/frontend/react-js/google-search-icon.png"
               className="searchicon"
               alt="search icon"
             />
-            <input type="search" onChange={this.onChangeinputsearch} />
+            <div className="inputcontainer">
+              <input
+                type="search"
+                onChange={this.onChangeinputsearch}
+                value={searchInput}
+              />
+            </div>
           </div>
           <ul className="listcontainer">
             {aftersearchedlist.map(eachsuggestion => (
