@@ -3,13 +3,14 @@
 import './index.css'
 
 const SuggestionItem = props => {
-  const {eachsuggestion, selectlist} = props
+  const {suggestiondetails, selectlist} = props
 
-  const {suggestion} = eachsuggestion
+  const {suggestion} = suggestiondetails
 
   const onSelect = () => {
     selectlist(suggestion)
   }
+
   return (
     <li className="listitem">
       <p className="heading">{suggestion}</p>
